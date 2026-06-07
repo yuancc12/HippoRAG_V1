@@ -1,0 +1,37 @@
+{
+  "dataset": "2WikiMultihopQA",
+  "retriever": "HippoRAG (ColBERTv2)",
+  "llm": "gpt-3.5-turbo-1106",
+  "num_queries": 1000,
+  "Table_2_single_step_retrieval": {
+    "description": "HippoRAG (ColBERTv2) single-step retrieval recall",
+    "source_file": "output/ircot/ircot_results_2wikimultihopqa_hipporag_colbertv2_demo_1_gpt-3_5-turbo-1106_no_ensemble_step_1_top_10_sim_thresh_0.8_damping_0.5.json",
+    "metrics": {
+      "R@1": 0.4035,
+      "R@2": 0.704,
+      "R@5": 0.8902,
+      "R@10": 0.9357
+    }
+  },
+  "Table_3_IRCoT_two_step_retrieval": {
+    "description": "IRCoT + HippoRAG (ColBERTv2) two-step retrieval recall",
+    "source_file": "output/ircot/ircot_results_2wikimultihopqa_hipporag_colbertv2_demo_1_gpt-3_5-turbo-1106_no_ensemble_step_2_top_10_sim_thresh_0.8_damping_0.5.json",
+    "metrics": {
+      "R@1": 0.4035,
+      "R@2": 0.7608,
+      "R@5": 0.942,
+      "R@10": 0.961
+    }
+  },
+  "Table_4_QA_evaluation": {
+    "description": "QA evaluation (doc_5) using HippoRAG (ColBERTv2) retrieval",
+    "source_file": "exp/qa_2wikimultihopqa_colbertv2_gpt-3.5-turbo-1106_demo_1_doc_5.json",
+    "metrics": {
+      "EM": 0.495,
+      "F1": 0.6216,
+      "Precision": 0.5994,
+      "Recall": 0.7008
+    }
+  },
+  "note": "Metrics are averaged across all per-query scores in the corresponding source_file (no single aggregate field exists in those raw result files)."
+}
