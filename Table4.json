@@ -1,0 +1,47 @@
+{
+  "2wikimultihopqa": {
+    "colbertv2": {
+      "EM": 0.495,
+      "F1": 0.6216,
+      "n_samples": 1000,
+      "precision": 0.5994,
+      "recall": 0.7008
+    },
+    "colbertv2_ircot": {
+      "EM": 0.538,
+      "F1": 0.6697,
+      "n_samples": 1000,
+      "precision": 0.646,
+      "recall": 0.7436
+    }
+  },
+  "hotpotqa": {
+    "colbertv2": {
+      "EM": 0.447,
+      "F1": 0.5786,
+      "n_samples": 1000,
+      "precision": 0.5927,
+      "recall": 0.6107
+    },
+    "colbertv2_ircot": {
+      "EM": 0.447,
+      "F1": 0.5786,
+      "n_samples": 1000,
+      "precision": 0.5927,
+      "recall": 0.6107,
+      "_warning": "SUSPECT: identical to colbertv2 result (likely wrong --data input was used), needs re-run with Table3 IRCoT retrieval"
+    }
+  },
+  "musique": {
+    "colbertv2": {
+      "EM": 0.2,
+      "F1": 0.3214,
+      "n_samples": 1000
+    },
+    "colbertv2_ircot": {
+      "EM": 0.238,
+      "F1": 0.3601,
+      "n_samples": 1000
+    }
+  }
+}

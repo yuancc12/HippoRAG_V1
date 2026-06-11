@@ -262,7 +262,7 @@ if __name__ == '__main__':
             retrieved_items = [passage.split('\n')[0].strip() for passage in retrieved_passages]
         else:
             gold_passages = [item for item in sample['paragraphs'] if item['is_supporting']]
-            gold_items = set([item['title'] + '\n' + item['text'] for item in gold_passages])
+            gold_items = set([item['title'] + '\n' + item['paragraph_text'] for item in gold_passages])
             retrieved_items = retrieved_passages
 
         # calculate metrics
